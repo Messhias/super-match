@@ -19,7 +19,7 @@ services:
   php:
     env_file:
       - ./.env
-    container_name: php_admin_collegia
+    container_name: super_match_php
     restart: always
     build:
       context: ./
