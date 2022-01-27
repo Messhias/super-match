@@ -1,25 +1,67 @@
-import logo from './logo.svg';
-import './App.css';
+import {Button, FormControl, Grid, OutlinedInput} from "@mui/material";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<Grid
+			xs={12}
+			sm={12}
+			md={12}
+			lg={12}
+			container
+			item
+		>
+			<Grid
+
+				xs={12}
+				sm={12}
+				md={12}
+				lg={12}
+				id={"header"}
+				container
+				item
+			>
+				<h1>
+					Super match
+				</h1>
+			</Grid>
+			<Grid
+				xs={12}
+				sm={12}
+				md={12}
+				lg={12}
+				className={"login-form"}
+				container
+				item
+			>
+				<FormControl
+					className={'form-control'}
+					fullWidth
+				>
+					<OutlinedInput
+						variant="outlined"
+						placeholder="Email"
+					/>
+				</FormControl>
+				<FormControl
+					className={'form-control'}
+					fullWidth
+				>
+					<OutlinedInput
+						variant="outlined"
+						placeholder="Password"
+					/>
+				</FormControl>
+				<FormControl
+					className={'form-control'}
+					fullWidth
+				>
+					<Button variant={"outlined"} color={"primary"}>
+						Login
+					</Button>
+				</FormControl>
+			</Grid>
+		</Grid>
+	);
 }
 
 export default App;
