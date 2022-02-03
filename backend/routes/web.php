@@ -17,5 +17,3 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get("/interests", [\App\Http\Controllers\InterestsController::class, "get"]);
-Route::get("/users", [\App\Http\Controllers\UsersController::class, "get"]);
